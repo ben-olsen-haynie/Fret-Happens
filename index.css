@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+.extraspace {
+    height: 10000px;
+}
+.header {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+.header a {
+    box-shadow: 5px -5px 8px rgba(66, 66, 66, 0.656);
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.header > *:last-child {
+    box-shadow: none;
+}
+.guitar-sidebar {
+    position: sticky;
+    top: 0px;
+    margin-left: 25px;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.fretboard-options {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: -220px;
+    top: 400px;
+    width: 800px;
+    rotate: -90deg;
+    /* border: solid grey 1px; */
+}
+.fretboard-options button {
+    margin: 0;
+    border-bottom: none;
+    border-right: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin-top: 150px;
+    
+}
+.chord-buttons {
+    position: absolute;
+    left: 17%;
+    top: 2px;
+    visibility: hidden;
+}
+.lyrics-section {
+    visibility: hidden;
+    /* border: solid 1px grey; */
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 20%;
+    right: 10%;
+}
+.sheet-chord {
+    visibility: hidden;
+    position: absolute;
+    bottom: 5px;
+    left: 400px;
+    /* border: 1px solid grey; */
+    height: 300px;
+    width: 70%;
+    padding-top: 130px;
+    
+    
+    
+}
+.guide-section {
+    visibility: hidden;
+    position: absolute;
+}
+.guide-dot {
+    border: solid grey 1px;
+    color: black;
+    text-align: center;
+    background-color: rgba(0, 195, 255, 0.936);
+    border-radius: 50%;
+    width: 25px;
+}
+.gd1, .gd2, .gd3, .gd4, .gd5, .gd6, .gd7, .gd8, .gd9, .gd10 {
+    position: absolute;
+    left: -10px;
+} 
+.gd11, .gd12, .gd13, .gd14, .gd15, .gd16, .gd17, .gd18, .gd19, .gd20 {
+    position: absolute;
+    left: 28px;
+} 
+.gd21, .gd22, .gd23, .gd24, .gd25, .gd26, .gd27, .gd28, .gd29, .gd30 {
+    position: absolute;
+    left: 68px;
+}
+.gd31, .gd32, .gd33, .gd34, .gd35, .gd36, .gd37, .gd38, .gd39, .gd40 {
+    position: absolute;
+    left: 107px;
+}
+.gd41, .gd42, .gd43, .gd44, .gd45, .gd46, .gd47, .gd48, .gd49, .gd50 {
+    position: absolute;
+    left: 148px;
+}
+.gd51, .gd52, .gd53, .gd54, .gd55, .gd56, .gd57, .gd58, .gd59, .gd60 {
+    position: absolute;
+    left: 188px;
+}
+.gd1, .gd11, .gd21, .gd31, .gd41, .gd51 {
+    top: 75px;
+}
+.gd2, .gd12, .gd22, .gd32, .gd42, .gd52 {
+    top: 178px;
+}
+.gd3, .gd13, .gd23, .gd33, .gd43, .gd53 {
+    top: 280px;
+}
+.gd4, .gd14, .gd24, .gd34, .gd44, .gd54 {
+    top: 383px;
+}
+.gd5, .gd15, .gd25, .gd35, .gd45, .gd55 {
+    top: 485px;
+}
+.gd6, .gd16, .gd26, .gd36, .gd46, .gd56 {
+    top: 586px;
+}
+.gd7, .gd17, .gd27, .gd37, .gd47, .gd57 {
+    top: 688px;
+}
+.gd8, .gd18, .gd28, .gd38, .gd48, .gd58 {
+    top: 790px;
+}
+.gd9, .gd19, .gd29, .gd39, .gd49, .gd59 {
+    top: 893px;
+}
+.gd10, .gd20, .gd30, .gd40, .gd50, .gd60 {
+    top: 990px;
+}
+.visible {
+    visibility: visible;
+}
+.background-change {
+    background-color: green;
+    color: black;
+}
+.string {
+    width: 2px;
+    height: 100%;
+    background-color: grey;
+
+}
+.fret {
+    position: absolute;
+    width: 200px;
+    height: 1.5px;
+    background-color: white;
+}
+.fret1 {
+    top: 10%;
+}
+.fret2 {
+    top: 20%;
+}
+.fret3 {
+    top: 30%;
+}
+.fret4 {
+    top: 40%;
+}
+.fret5 {
+    top: 50%;
+}
+.fret6 {
+    top: 60%;
+}
+.fret7 {
+    top: 70%;
+}
+.fret8 {
+    top: 80%;
+}
+.fret9 {
+    top: 90%;
+}
+.light {
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: x-large;
+    visibility: hidden;
+    text-align: center;
+}
+@keyframes fadein-fadeout {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.fade-animation {
+    animation: fadein-fadeout 1.5s ease-in-out forwards;
+}
+@keyframes light-up {
+    0% {
+        background-color: grey;
+    }
+    30% {
+        /* background-color: rgb(26, 216, 153); */
+        box-shadow: 0 0 4px 1px rgb(47, 255, 158);
+    }
+    70% {
+        /* box-shadow: 0 0 15px #ffee00; */
+        box-shadow: 0 0 4px 1px rgb(47, 255, 158);
+        /* background-color: rgb(201, 243, 30); */
+    }
+    100% {
+        background-color: grey;
+    }
+}
+.light-up {
+    animation: light-up 2s ease-in-out forwards;
+}
